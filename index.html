@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Haekal | Professional Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
+        }
+        .nav-link {
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: #4b5563;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .portfolio-item {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .portfolio-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-xl font-semibold text-gray-800">Muhammad Haekal</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link text-gray-800">Home</a>
+                    <a href="portfolio.html" class="nav-link text-gray-800">Portfolio</a>
+                    <a href="about.html" class="nav-link text-gray-800">About</a>
+                    <a href="contact.html" class="nav-link text-gray-800">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="menu-btn" class="text-gray-800">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-2 px-4 shadow-lg">
+            <a href="index.html" class="block py-2 text-gray-800">Home</a>
+            <a href="portfolio.html" class="block py-2 text-gray-800">Portfolio</a>
+            <a href="about.html" class="block py-2 text-gray-800">About</a>
+            <a href="contact.html" class="block py-2 text-gray-800">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient py-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0" data-aos="fade-right">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Muhammad Haekal</h1>
+                    <h2 class="text-2xl md:text-3xl text-gray-600 mb-6">Mechatronics Engineer & Photographer</h2>
+                    <p class="text-gray-600 mb-8 max-w-lg">
+                        Combining technical expertise from my mechatronics background with a creative eye for photography, 
+                        I bring a unique perspective to both engineering solutions and visual storytelling.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="portfolio.html" class="bg-gray-800 text-white px-6 py-2 rounded-md hover:bg-gray-700 transition">View Portfolio</a>
+                        <a href="contact.html" class="border border-gray-800 text-gray-800 px-6 py-2 rounded-md hover:bg-gray-100 transition">Contact Me</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center" data-aos="fade-left">
+                    <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white shadow-xl">
+                        <img src="E:\My porto\Image\DZL07311.JPG" alt="Muhammad Haekal" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills & Expertise -->
+    <section class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">Skills & Expertise</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-gray-50 p-8 rounded-lg" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-gray-800 p-3 rounded-full mr-4">
+                            <i data-feather="cpu" class="text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Technical Skills</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        As a Mechatronics graduate, I possess strong analytical and problem-solving skills with experience in:
+                    </p>
+                    <ul class="list-disc pl-5 text-gray-600 space-y-2">
+                        <li>Data analysis and interpretation</li>
+                        <li>Technical documentation</li>
+                        <li>Environmental data analysis</li>
+                        <li>Administrative support</li>
+                        <li>Project coordination</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-lg" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-gray-800 p-3 rounded-full mr-4">
+                            <i data-feather="camera" class="text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Photography</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        Specializing in capturing technical beauty and emotional moments through:
+                    </p>
+                    <ul class="list-disc pl-5 text-gray-600 space-y-2">
+                        <li>Automotive photography</li>
+                        <li>Wedding photography</li>
+                        <li>Detail-oriented composition</li>
+                        <li>Lighting techniques</li>
+                        <li>Post-processing</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Portfolio Highlights -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">Portfolio Highlights</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="portfolio-item bg-white rounded-lg overflow-hidden shadow-md" data-aos="fade-up" data-aos-delay="100">
+                    <img src="E:\My porto\Image\IMG-20231024-WA0047.jpeg" alt="Technical Project" class="w-full h-48 object-cover object-center">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2">Technical Project</h3>
+                        <p class="text-gray-600 text-sm">Chronicling the journey from design schematics to on-site deployment, highlighting the hands-on execution of complex technical solutions.</p>
+                    </div>
+                </div>
+                <div class="portfolio-item bg-white rounded-lg overflow-hidden shadow-md" data-aos="fade-up" data-aos-delay="150">
+                    <img src="E:\My porto\Image\20240624_102554.jpg" alt="System Design" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2">Project Management & Administration</h3>
+                        <p class="text-gray-600 text-sm">Overseeing the intricate orchestration of project lifecycles, from inception to execution, ensuring seamless logistical and administrative coherence.</p>
+                    </div>
+                </div>
+                <div class="portfolio-item bg-white rounded-lg overflow-hidden shadow-md" data-aos="fade-up" data-aos-delay="200">
+                    <img src="E:\My porto\Image\SAVE_20230607_191220.jpg" alt="Technical Detail" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2">Photography</h3>
+                        <p class="text-gray-600 text-sm">Specializing in the visual documentation of technical environments and pivotal events, chronicling moments with a keen eye for detail and dynamic composition.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12" data-aos="fade-up">
+                <a href="portfolio.html" class="inline-block bg-gray-800 text-white px-6 py-3 rounded-md hover:bg-gray-700 transition">
+                    View Full Portfolio
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Muhammad Haekal</h3>
+                    <p class="text-gray-300">Mechatronics Engineer & Photographer</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Navigation</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-300 hover:text-white transition">Home</a></li>
+                        <li><a href="portfolio.html" class="text-gray-300 hover:text-white transition">Portfolio</a></li>
+                        <li><a href="about.html" class="text-gray-300 hover:text-white transition">About</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2">
+                        <li class="text-gray-300">haekalmuhammad1031@gmail.com</li>
+                        <li class="flex items-center space-x-2">
+                            <i data-feather="instagram"></i>
+                            <span class="text-gray-300">@haekal_with.e</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i data-feather="linkedin"></i>
+                            <span class="text-gray-300">@haekalwithe</span>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Follow Me</h4>
+                    <div class="flex space-x-4">
+                        <a href="https://www.instagram.com/haekal_with.e" class="text-gray-300 hover:text-white transition">
+                            <i data-feather="instagram"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/haekalwithe/" class="text-gray-300 hover:text-white transition">
+                            <i data-feather="linkedin"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Muhammad Haekal. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        
+        feather.replace();
+        
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Form submission
+        const contactForm = document.querySelector('form');
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you for your message! I will get back to you soon.');
+            contactForm.reset();
+        });
+    </script>
+</body>
+</html>

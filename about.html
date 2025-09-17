@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Muhammad Haekal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <style>
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -30px;
+            top: 0;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background-color: #1f2937;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: -24px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background-color: #d1d5db;
+        }
+        .nav-link {
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: #4b5563;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .skill-bar {
+            height: 8px;
+            background-color: #e5e7eb;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        .skill-progress {
+            height: 100%;
+            background-color: #1f2937;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-xl font-semibold text-gray-800">Muhammad Haekal</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link text-gray-800">Home</a>
+                    <a href="portfolio.html" class="nav-link text-gray-800">Portfolio</a>
+                    <a href="about.html" class="nav-link text-gray-800 font-semibold">About</a>
+                    <a href="contact.html" class="nav-link text-gray-800">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="menu-btn" class="text-gray-800">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-2 px-4 shadow-lg">
+            <a href="index.html" class="block py-2 text-gray-800">Home</a>
+            <a href="portfolio.html" class="block py-2 text-gray-800">Portfolio</a>
+            <a href="about.html" class="block py-2 text-gray-800 font-semibold">About</a>
+            <a href="contact.html" class="block py-2 text-gray-800">Contact</a>
+        </div>
+    </nav>
+
+    <!-- About Header -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6" data-aos="fade-up">About Me</h1>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                Combining technical expertise with creative vision
+            </p>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <section class="py-12 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row gap-12">
+                <div class="md:w-1/3" data-aos="fade-right">
+                    <div class="relative w-64 h-64 mx-auto md:mx-0 rounded-full overflow-hidden border-4 border-white shadow-xl">
+                        <img src="https://huggingface.co/spaces/Manggabernai/my-porto/resolve/main/images/DZL07311.JPG" alt="Muhammad Haekal" class="w-full h-full object-cover">
+                    </div>
+                    <div class="mt-8">
+                        <h3 class="text-xl font-semibold mb-4">Personal Info</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i data-feather="user" class="mr-3 text-gray-600"></i>
+                                <span>Muhammad Haekal</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="mail" class="mr-3 text-gray-600"></i>
+                                <span>haekalmuhammad1031@gmail.com</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="map-pin" class="mr-3 text-gray-600"></i>
+                                <span>Makassar, Indonesia</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="md:w-2/3" data-aos="fade-left">
+                    <h2 class="text-3xl font-bold mb-6">My Story</h2>
+                    <div class="prose max-w-none text-gray-700 space-y-6">
+                        <p>
+                            I'm Muhammad Haekal, a graduate in Mechatronics Engineering from SMK SMTI Makassar with a passion for both technical problem-solving and creative photography. My journey began with a fascination for how things work, which led me to pursue mechatronics - a field that combines mechanical, electrical, and computer engineering.
+                        </p>
+                        <p>
+                            During my internship at PT Surveyor Indonesia, I developed strong analytical skills working with environmental data and technical documentation. This experience taught me the importance of attention to detail and systematic approaches to problem-solving.
+                        </p>
+                        <p>
+                            Parallel to my technical education, I discovered photography as a creative outlet. What started as a hobby quickly evolved into a professional pursuit, specializing in automotive photography. My technical background gives me a unique perspective when capturing the intricate details of vehicles.
+                        </p>
+                        <p>
+                            I believe the combination of my technical expertise and creative vision allows me to approach challenges from multiple perspectives, whether it's analyzing data or composing the perfect shot.
+                        </p>
+                    </div>
+                    
+                    <!-- Education & Experience -->
+                    <div class="mt-12">
+                        <h3 class="text-2xl font-semibold mb-6">Education & Experience</h3>
+                        <div class="relative timeline pl-8">
+                            <div class="relative timeline-item mb-8">
+                                <h4 class="text-xl font-semibold">SMK SMTI Makassar</h4>
+                                <p class="text-gray-600 mb-2">Mechatronics Engineering | 2020 - 2024</p>
+                                <p class="text-gray-700">
+                                    Studied the integration of mechanical, electrical, and computer engineering principles. Completed projects involving automation, control systems, and technical documentation.
+                                </p>
+                            </div>
+                            <div class="relative timeline-item mb-8">
+                                <h4 class="text-xl font-semibold">Internship at PT Surveyor Indonesia</h4>
+                                <p class="text-gray-600 mb-2">Technical Support Intern | 2023 - 2024</p>
+                                <p class="text-gray-700">
+                                    Assisted in environmental data analysis, technical documentation, and project coordination. Gained experience in systematic problem-solving and professional communication.
+                                </p>
+                            </div>
+                            <div class="relative timeline-item">
+                                <h4 class="text-xl font-semibold">Freelance Photographer</h4>
+                                <p class="text-gray-600 mb-2">2020 - Present</p>
+                                <p class="text-gray-700">
+                                    Specializing in automotive and wedding photography. Developed skills in composition, lighting, post-processing, and client relations while maintaining a technical approach to equipment and workflow.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Skills Section -->
+    <section class="py-12 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">My Skills</h2>
+            
+            <div class="grid grid-cols-1 gap-8">
+                <!-- Combined Skills -->
+                <div data-aos="fade-up">
+                    <h3 class="text-xl font-semibold mb-6 flex items-center">
+                        <i data-feather="aperture" class="mr-2"></i> My Skills
+                    </h3>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span>Data Analysis</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span>Technical Documentation</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span>Microsoft Office</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span>Adobe Creative Suite</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span>Photography</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span>Photo Editing</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Muhammad Haekal</h3>
+                    <p class="text-gray-300">Mechatronics Engineer & Photographer</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Navigation</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-300 hover:text-white transition">Home</a></li>
+                        <li><a href="portfolio.html" class="text-gray-300 hover:text-white transition">Portfolio</a></li>
+                        <li><a href="about.html" class="text-gray-300 hover:text-white transition">About</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2">
+                        <li class="text-gray-300">haekalmuhammad1031@gmail.com</li>
+                        <li class="flex items-center space-x-2">
+                            <i data-feather="instagram"></i>
+                            <span class="text-gray-300">@haekal_with.e</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i data-feather="linkedin"></i>
+                            <span class="text-gray-300">@haekalwithe</span>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Follow Me</h4>
+                    <div class="flex space-x-4">
+                        <a href="https://www.instagram.com/haekal_with.e" class="text-gray-300 hover:text-white transition">
+                            <i data-feather="instagram"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/haekalwithe/" class="text-gray-300 hover:text-white transition">
+                            <i data-feather="linkedin"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Muhammad Haekal. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        
+        feather.replace();
+        
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Form submission
+        const contactForm = document.querySelector('form');
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you for your message! I will get back to you soon.');
+            contactForm.reset();
+        });
+    </script>
+</body>
+</html>
